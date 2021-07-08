@@ -38,3 +38,9 @@ jobs:
             ./gradlew clean assembleDebug --no-daemon --stacktrace
             ls -l
             
+            
+    - name: Upload result for job
+      uses: actions/upload-artifact@v1
+      with:
+          name: Build
+          path: app/build
