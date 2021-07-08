@@ -36,4 +36,5 @@ jobs:
             sudo chmod 777 gradlew
             gradle init
             ./gradlew clean assembleDebug --no-daemon --stacktrace
+            ls -l
             
